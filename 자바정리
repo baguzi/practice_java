@@ -1,0 +1,47 @@
+### 자바 코드의 구조
+
+```csharp
+public class Main{
+    public static void main(String[]args){
+        
+        System.out.println("Hello World");
+    }
+}
+```
+
+- 자바 코드의 가장 바깥쪽 영역은 클래스 블록이다. 클래스명은 사용자 마음대로 지을 수 있다. 단, 클래스명은 소스 파일의 이름(예: 클래스명.java)과 똑같이 사용해야 한다. 그리고 클래스 블록은 여러 메서드 블록을 포함한다.
+- 메서드 블록은 클래스 블록 안에 있으며 역시 중괄호({})로 영역을 구분한다.
+    - `static`: 객체를 만들지 않아도 이 메서드를 바로 실행할 수 있게 해줌
+    - `void`: 이 메서드는 아무것도 리턴하지 않는다는 뜻
+    - `String[] args`: 프로그램 실행 시 전달되는 문자열 배열
+    - 클래스 블록 안에는 메서드 블록이 여러 개 있을 수 있다.
+    - 메서드 블록 안에는 명령문이 있다.  ⏩  `System.out.println("Hello World");`
+    - 명령문은 반드시 세미콜론(;)을 붙여 문장이 끝났다는 것을 표시해야 한다.
+
+### 변수와 자료형
+
+- 변수명은 숫자로 시작할 수 없다.
+- `_`와 `$` 이외의 특수 문자는 사용할 수 없다.
+- int, class, return 등 자바의 키워드는 변수명으로 사용할 수 없다.
+- 기본자료형
+    - 정수형 : byte , short , int , long
+    - 실수형 : double
+    - 문자형 : char
+    - 논리형 : boolean
+    
+    ```csharp
+    
+    int base = 180;
+    int height = 185;
+    boolean isTall = height > base;
+    
+    if (isTall) {
+        System.out.println("키가 큽니다.");
+    }
+    ```
+    
+- 자료형은 자주 이렇게 쓰임
+    - 정수 - int
+    - 실수 - double
+    - 문자열 - string
+- 변수선언 후 값 대입
